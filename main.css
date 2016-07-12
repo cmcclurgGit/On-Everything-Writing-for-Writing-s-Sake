@@ -17,12 +17,14 @@ h2 {
 body {
     background-color:#62a4d1;
     background-size:cover;
+    height:100%;
 }
 
 #bulk {
 	border-radius: 5px;
 	width:1000px;
-	height:200px;
+	height: auto !important;
+	height: 100%;
 	background-color:#e5e5e5;
 	padding-left:6rem;
 	margin-left:3rem;
@@ -37,6 +39,10 @@ body {
 
 }
 
+.push {
+	height: 1em;
+}
+
 #footer {
     float:right;
     height:2rem;
@@ -45,7 +51,8 @@ body {
     border-top-right-radius:5px; 
     border-top-left-radius:5px;
     bottom:0;
-    position:absolute;
+    padding-bottom: -4em;
+    margin-top:.5em;
 }
 
 #container {
