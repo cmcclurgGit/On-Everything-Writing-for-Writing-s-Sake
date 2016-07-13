@@ -4,6 +4,13 @@
 		<title>On Everything: Writing for Writing's Sake</title>
 		<link type="text/css" rel="stylesheet" href="main.css"/>
 		<script type="text/javascript" src="script.js"></script>
+		<style type="text/css">
+			.message-style1 {
+				color:navy;
+				font-weight:bold;
+				background-color:gray;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container">
@@ -12,8 +19,18 @@
 					<ul>
 						<li>More</li>
 						<li>Essays</li>
-						<li>To</li>
-						<li>Come</li>
+						<li>To Come</li>
+						<input type="button" value="Toggle Style" onclick="toggleStyle()" />
+							<script type="text/javascript">
+								function toggleStyle() {
+									var bulk	= document.getElementById("bulk");
+									if (bulk.className === "message-style1"){
+										bulk.className = "";
+									} else {
+										bulk.className = "message-style1";
+									}
+								}
+							</script>
 					</ul>
 				</nav>
 				<h2> On Everything: Writing for Writing's Sake</h2>
