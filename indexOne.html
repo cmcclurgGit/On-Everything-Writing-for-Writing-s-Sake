@@ -3,14 +3,6 @@
 	<head>
 		<title>On Everything: Writing for Writing's Sake</title>
 		<link type="text/css" rel="stylesheet" href="main.css"/>
-		<script type="text/javascript" src="script.js"></script>
-		<style type="text/css">
-			.message-style1 {
-				color:navy;
-				font-weight:bold;
-				background-color:gray;
-			}
-		</style>
 	</head>
 	<body>
 		<div class="container">
@@ -23,9 +15,17 @@
 						<input type="button" value="Toggle Style" onclick="toggleStyle()" />
 							<script type="text/javascript">
 								function toggleStyle() {
-									var bulk	= document.getElementById("bulk");
+									var bulk = document.getElementById("bulk");
 									if (bulk.className === "message-style1"){
 										bulk.className = "";
+									} else if(bulk.className === "bulk1") {
+										bulk.className = "bulk";
+									} else if(bulk.className === "bulk"){
+										bulk.className = "bulk1";
+									} else if(bulk.className === "shrink"){
+										bulk.className = "shrink2";
+									} else if(bulk.className === "shrink2") {
+										bulk.className = "shrink";
 									} else {
 										bulk.className = "message-style1";
 									}
@@ -35,25 +35,71 @@
 				</nav>
 				<h2> On Everything: Writing for Writing's Sake</h2>
 			</div>
+			<a href="#" onclick="animated.startGrowAnimation(); return false;"> Grow Writing</a>
+			<a href="#" onclick="animated.startShrinkAnimation(); return false;"> Shrink Writing</a>
+			<a href="#" onclick="animated.revertAnimation(); return false;"> Revert Changes</a>
 			<div id="bulk">
 				<h2> Language and Communication </h2>
-				<p> One like a set of fireworks, the other like a persistent stream or gale. New language can bring emotion from a single neuron and carry across countries like wildfire. Close study of many languages shows the instinct to adapt and create vocabulary anew at every crossing of time. But, change in communication is taxing. Forms of communication--timeless oral storytelling, music, or literature--continuously morph content and method, but their place within culture, the world, and the learning experience of being human remains still. </p>
+				<p class="writing"> One like a set of fireworks, the other like a persistent stream or gale. New language can bring emotion from a single neuron and carry across countries like wildfire. Close study of many languages shows the instinct to adapt and create vocabulary anew at every crossing of time. But, change in communication is taxing. Forms of communication--timeless oral storytelling, music, or literature--continuously morph content and method, but their place within culture, the world, and the learning experience of being human remains still. </p>
 
-				<p>And then phones and computers came along. People absorb information instantly and are happy for it. Communication and information spreading can jettison a friend from the other side of the world to your couch with the touch of a reply button. The benefits are obvious, and the losses are too. As humanity overcomes the physical boundaries to conversation, the human connections during it have become sterile. The tenuous but rewarding act of mailing a letter has been replaced by the convenience of cellphones and email. The tedious Roman or Greek epic has been replaced by an easily digested crash course video online. </p>
+				<p class="writing">And then phones and computers came along. People absorb information instantly and are happy for it. Communication and information spreading can jettison a friend from the other side of the world to your couch with the touch of a reply button. The benefits are obvious, and the losses are too. As humanity overcomes the physical boundaries to conversation, the human connections during it have become sterile. The tenuous but rewarding act of mailing a letter has been replaced by the convenience of cellphones and email. The tedious Roman or Greek epic has been replaced by an easily digested crash course video online. </p>
 
-				<p>Personal communication has been subverted and acquiesced to the will of machinery. Evolution in machine learning and AI growth has spurred fresh discussion on what is consciousness. Does the decision making process of the computer playing chess compare to the algorithms working within the human brain? Though I'm not a philosopher or a psychologist, I believe a fundamental part of being human is growth--a process subsequently tied to interpreting and acting on new information--and technology has morphed human interpretation of their surroundings.</p>
+				<p class="writing">Personal communication has been subverted and acquiesced to the will of machinery. Evolution in machine learning and AI growth has spurred fresh discussion on what is consciousness. Does the decision making process of the computer playing chess compare to the algorithms working within the human brain? Though I'm not a philosopher or a psychologist, I believe a fundamental part of being human is growth--a process subsequently tied to interpreting and acting on new information--and technology has morphed human interpretation of their surroundings.</p>
 
-				<p>How should one judge their own growth? Use the culmination of past experiences to determine the essence of "you." Quickly the self-reflective person will create a story of their own life with twists and turns explaining moments of change. A traumatizing experience can bring light to current personality traits, and exploration of historical context or literature can provide insight to one's lifestyle. We speak many languages, but we are all tied to the passage of time. Viewing growth through the passage of a life, a century, or a millenia, we all can find new meaning to the present.</p> 
+				<p class="writing">How should one judge their own growth? Use the culmination of past experiences to determine the essence of "you." Quickly the self-reflective person will create a story of their own life with twists and turns explaining moments of change. A traumatizing experience can bring light to current personality traits, and exploration of historical context or literature can provide insight to one's lifestyle. We speak many languages, but we are all tied to the passage of time. Viewing growth through the passage of a life, a century, or a millenia, we all can find new meaning to the present.</p> 
 
-				<p>So where does that leave us? Hopefully, with a better understanding of how technology has shaped communication to become instantly gratifying. Knowing how that change affects our own surroundings is important too. The phone and computer have brought tremendous convenience to the world, but they have also created their own sterile, unpersonal universe. By checking in on our growth, and the meaning we find in the lives of those before us, in history or in writing, we can strive to not get lost in the moment. </p>
+				<p class="writing">So where does that leave us? Hopefully, with a better understanding of how technology has shaped communication to become instantly gratifying. Knowing how that change affects our own surroundings is important too. The phone and computer have brought tremendous convenience to the world, but they have also created their own sterile, unpersonal universe. By checking in on our growth, and the meaning we find in the lives of those before us, in history or in writing, we can strive to not get lost in the moment. </p>
 
-				<p>Emerson believes language is used to describe feelings present in nature. Technology will never surpass the pathos of walking outside on a rainy day because you want to get wet. Technical communication is not connection. As humanity evolves the lifestyles we live, there must be a constant effort to stay in touch with the personal connection. Go visit your friend Hemingway at the library, take a late night stroll to just think... and put away the phone for dinner.</p>
+				<p class="writing">Emerson believes language is used to describe feelings present in nature. Technology will never surpass the pathos of walking outside on a rainy day because you want to get wet. Technical communication is not connection. As humanity evolves the lifestyles we live, there must be a constant effort to stay in touch with the personal connection. Go visit your friend Hemingway at the library, take a late night stroll to just think... live a conscious life.</p>
 			<div class="push"></div>
 			</div>
 			<div id="footer">
-				<a href="https://www.linkedin.com/in/chris-mcclurg-1b8a05ba" class="contact_btn" id="linked">Find Me On LinkedIn</a> 
+				<a href="https://www.linkedin.com/in/chris-mcclurg-1b8a05ba" class="contact_btn" id="linked">Find Me On LinkedIn</a>
 	        	<a href="https://github.com/cmcclurgGit" class="contact_btn" id="git">My Github</a>
 	    	</div>
 	    </div>
+	    <script type="text/javascript">
+			var animated = {
+				timer: null,
+				el: document.getElementById("bulk"),
+				startGrowAnimation : function(){
+					this.stopAnimation();
+					if (bulk.className === "message-style1"){
+						bulk.className = "bulk1";
+					} else {
+						bulk.className = "bulk";
+					}
+					this.timer = setInterval(function(){
+						animated.doAnimation(10);
+					}, 50);
+				},
+				startShrinkAnimation : function(){
+					this.stopAnimation();
+					if (bulk.className === "message-style1"){
+						bulk.className = "shrink2";
+					} else{
+						bulk.className = "shrink";
+					}
+				},
+				revertAnimation : function(){
+					bulk.className = "";
+					this.timer = setInterval(function(){
+						animated.doAnimation(-10);
+					}, 50);
+				},
+				stopAnimation : function(){
+					clearInterval(this.timer);
+				},
+				doAnimation : function(amount){
+					var size = this.el.offsetHeight;
+					if (amount > 0 && size <= 1000){
+						this.el.style.height = size + amount + "px";
+					} else {
+						this.stopAnimation();
+					}
+				}	
+			};
+		</script>
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
